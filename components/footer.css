@@ -1,0 +1,80 @@
+.footer{
+    background-color: #2C2C2C;
+    height: 493px;
+}
+
+
+
+.section-footer__logo{
+    height: 104px;
+    display: flex;
+    flex-direction: column;
+    padding: 53px 0px 95px 32px;
+
+}
+
+
+
+.section-footer__logo-image{
+    height: 200px;
+    width: 350px;
+}  
+
+
+
+.container-social-media{
+    height: 138px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.instagram{
+    width: 107px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.instagram-image{
+    width: 27px;
+    height: 27px;
+    margin-left: 7px;
+}
+
+.linkedin{
+    width: 94px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.linkedin-image{
+    width: 28px;
+    height: 28px;
+    margin-left: 7px;
+}
+
+.github{
+    width: 81px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.github-image{
+    width: 29px;
+    height: 29px;
+    margin-left: 7px;
+}
+
+.name-social-media{
+    color: #DBDBDB;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+}
