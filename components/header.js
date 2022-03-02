@@ -5,7 +5,7 @@ function headerContent(header){
     headerDiv.innerHTML = `
     <div class="header__container">
         <h2 class="header__logo">
-            <img src="/LOGO2.jpg" alt="logo-image" class="logo" height="90px" width="150px">
+            <img src="images/LOGO2.jpg" alt="logo-image" class="logo" height="90px" width="150px">
         </h2>
     <div class="header__burger">
       <div class="a"></div>
@@ -32,12 +32,12 @@ function headerContent(header){
     `;
 
 
-    const openButton = headerDiv.querySelector(".header__burguer");
+    const openButton = headerDiv.querySelector(".header__burger");
     const closeButton = headerDiv.querySelector(".header__window-close");
-    const window = headerDiv.querySelector(".header__window");
+    const wind = headerDiv.querySelector(".header__window");
 
-    openButton.addEventListener("click", ()=> {window.style.display = "inherit";});
-    closeButton.addEventListener("click", ()=> {window.style.display = "";});
+    openButton.addEventListener("click", ()=> {wind.style.display = "inherit";});
+    closeButton.addEventListener("click", ()=> {wind.style.display = "";});
 
     header.appendChild(headerDiv);
 }
