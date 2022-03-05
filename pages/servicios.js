@@ -1,4 +1,25 @@
  
+  function addService(params = {}) {
+
+    const template = document.querySelector("#services__template");
+    const services = document.querySelector(".services__content");
+  
+    template.content.querySelector(".service__title").textContent =
+      params.title;
+  
+    template.content.querySelector(".service__text").textContent =
+      params.description;
+  
+    template.content.querySelector(".service__image").src =
+      "http:" + params.image;
+  
+    template.content.querySelector(".service__link").href = params.url;
+  
+    const clone = document.importNode(template.content, true);
+    services.appendChild(clone);
+  }
+ 
+
  function getServices() {
 
   return fetch(
@@ -22,28 +43,7 @@
       return fieldsCollections;
     });
 }
- 
- function addService(params = {}) {
 
-    const template = document.querySelector("#services__template");
-    const services = document.querySelector(".services__content");
-  
-    template.content.querySelector(".service__title").textContent =
-      params.title;
-  
-    template.content.querySelector(".service__text").textContent =
-      params.description;
-  
-    template.content.querySelector(".service__image").src =
-      "http:" + params.image;
-  
-    template.content.querySelector(".service__link").href = params.url;
-  
-    const clone = document.importNode(template.content, true);
-    services.appendChild(clone);
-  }
-
-  
 
   function getImages(id, json) {
     return json.includes.Asset.find((i) => {
@@ -51,12 +51,16 @@
     });
   }
   
-  function mainService() {
-    getServices().then(function (services) {
-      for (const s of services) {addService(s);}
-    });
-  
-    headerContent(document.querySelector(".services"));
-    footerContent(document.querySelector(".footer"));
-  }
-  
+
+  function main() {
+
+headerContent(document.querySelector(".header"));
+
+getServices().then(function (ser) {
+  for (const s of ser) {addService(s);}
+});
+
+footerContent(document.querySelector(".footer"));
+}
+
+main();
