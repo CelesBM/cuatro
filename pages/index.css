@@ -5,11 +5,9 @@ margin: 0;
 }
 
 .home{
-background: url("https://besthqwallpapers.com/Uploads/18-5-2020/133234/thumb2-programming-laptop-in-hands-network-technologies-programming-concepts-website-development-concepts.jpg") no-repeat center center fixed;
-background-size: cover;
-height: 616px;
-
-}
+    background: url("https://besthqwallpapers.com/Uploads/18-5-2020/133234/thumb2-programming-laptop-in-hands-network-technologies-programming-concepts-website-development-concepts.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 616px; }
 
 .header-container{
 display: flex;
@@ -52,6 +50,10 @@ margin: 0 auto;
 line-height: 200px;
 }
 
+    @media (min-width: 667px) {
+        .about-me__container {
+            padding: 70px;}}
+
 .me{
 color: white;
 font-size: 32px;
@@ -59,7 +61,6 @@ text-align: center;
 margin: 0 auto;
 line-height: 11px;
 }
-
 
 .about-me{
 background-color: #141414;
@@ -90,14 +91,12 @@ line-height: 24px;
     align-items: center;
 }
 
-
 .services__title{
     font-weight: 700;
     font-size: 32px;
     margin-top: 69px;
     margin-bottom: 0;
 }
-
 
 .services__content{
     height: 1135px;
@@ -107,7 +106,6 @@ line-height: 24px;
     align-items: center;
     margin-bottom: 66px;
 }
-
 
 .service{
     height: 307px;
@@ -137,13 +135,3 @@ h3{
     text-align: center;
     margin: 0;
 }
-
-
-
-
-
-
-
-
-
-

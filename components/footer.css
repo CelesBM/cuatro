@@ -1,26 +1,28 @@
 .footer{
     background-color: #2C2C2C;
-    height: 493px;
+    height: 498px;
 }
 
-
+    @media (min-width: 667px) {
+        .section-footer {
+            display: flex;
+            justify-content: space-between;}}
 
 .section-footer__logo{
     height: 104px;
     display: flex;
     flex-direction: column;
     padding: 53px 0px 95px 32px;
-
 }
 
-
+    @media (min-width: 667px) {
+        .section-footer__logo {
+            padding: 140px 0px 0px 70px;}}
 
 .section-footer__logo-image{
     height: 200px;
     width: 350px;
 }  
-
-
 
 .container-social-media{
     height: 138px;
@@ -28,8 +30,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
 }
 
+    @media (min-width: 667px) {
+        .container-social-media {
+             padding: 150px 70px;}}
 
 .instagram{
     width: 107px;

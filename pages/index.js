@@ -1,3 +1,4 @@
+
 function main(){
 
    const headerEl = document.querySelector(".header");
@@ -8,8 +9,9 @@ function main(){
 
    const footerEl = document.querySelector(".footer");
    footerContent(footerEl);
-
 }
 
-      main();
+main();
+
+
 

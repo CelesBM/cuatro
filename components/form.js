@@ -28,8 +28,3 @@ function formEvent(){
   });
   });
   };
-
-
-   
-
-  

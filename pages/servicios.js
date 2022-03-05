@@ -1,3 +1,28 @@
+ 
+ function getServices() {
+
+  return fetch(
+      "https://cdn.contentful.com/spaces/t2y6laxvfxhu/environments/master/entries?access_token=8antS_Xvc_jULVQcI5ZhnjHG39eFLNVFDvsL-2AplkM&content_type=services"
+  )
+    .then((res) => {
+      return res.json();})
+
+    .then((data) => {
+      const fieldsCollections = data.items.map((i) => {
+        const imgId = i.fields.image.sys.id;
+        const img = getImages(imgId, data);
+        
+        return {
+          title: i.fields.title,
+          description: i.fields.description,
+          image: img.fields.file.url,
+        };
+      });
+      
+      return fieldsCollections;
+    });
+}
+ 
  function addService(params = {}) {
 
     const template = document.querySelector("#services__template");
@@ -18,29 +43,7 @@
     services.appendChild(clone);
   }
 
-  function getServices() {
-
-    return fetch(
-        "https://cdn.contentful.com/spaces/t2y6laxvfxhu/environments/master/entries?access_token=8antS_Xvc_jULVQcI5ZhnjHG39eFLNVFDvsL-2AplkM&content_type=services"
-    )
-      .then((res) => {
-        return res.json();})
-
-      .then((data) => {
-        const fieldsCollections = data.items.map((i) => {
-          const imgId = i.fields.image.sys.id;
-          const img = getImages(imgId, data);
-          
-          return {
-            title: i.fields.title,
-            description: i.fields.description,
-            image: img.fields.file.url,
-          };
-        });
-        
-        return fieldsCollections;
-      });
-  }
+  
 
   function getImages(id, json) {
     return json.includes.Asset.find((i) => {
@@ -48,7 +51,7 @@
     });
   }
   
-  function main() {
+  function mainService() {
     getServices().then(function (services) {
       for (const s of services) {addService(s);}
     });
@@ -57,4 +60,3 @@
     footerContent(document.querySelector(".footer"));
   }
   
-  main();
