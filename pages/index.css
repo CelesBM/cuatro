@@ -7,7 +7,16 @@ margin: 0;
 .home{
     background: url("https://besthqwallpapers.com/Uploads/18-5-2020/133234/thumb2-programming-laptop-in-hands-network-technologies-programming-concepts-website-development-concepts.jpg") no-repeat center center fixed;
     background-size: cover;
-    height: 616px; }
+    height: 616px; 
+}
+
+.header{
+    background-color: black;
+    height: 65px;
+}
+
+@media (min-width: 667px) {
+    .header {height: 80px;}}
 
 .header-container{
 display: flex;
@@ -16,7 +25,7 @@ margin-right: 20px;
 }
 
 .logo{
-margin: 10px 0 0 10px;
+margin: 0px 0 0 10px;
 }
 
 .home__options{

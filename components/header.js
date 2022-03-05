@@ -4,9 +4,9 @@ function headerContent(header){
     
     headerDiv.innerHTML = `
     <div class="header__container">
-        <h2 class="header__logo">
-            <img src="images/LOGO2.jpg" alt="logo-image" class="logo" height="60px" width="100px">
-        </h2>
+        <a href="./index.html" class="header__logo">
+            <img src="images/LOGO2.jpg" alt="logo-image" class="logo" height="40px" width="85px">
+        </a>
     <div class="header__burger">
       <div class="line"></div>
       <div class="line"></div>
@@ -23,8 +23,8 @@ function headerContent(header){
         <nav class="header__window-nav">
         <ul class="header__window-list">
           <a href="./portfolio.html" class="item-a"><li class="item-li">Portfolio</li></a>
-          <a href="./services.html" class="item-a"><li class="item-li">Servicios</li></a>
-          <a href="./contact.html" class="item-a"><li class="item-li">Contacto</li></a>
+          <a href="./servicios.html" class="item-a"><li class="item-li">Servicios</li></a>
+          <a href="./contacto.html" class="item-a"><li class="item-li">Contacto</li></a>
         </ul>
       </nav>
     </section>

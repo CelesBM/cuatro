@@ -12,6 +12,12 @@ body{
     margin: 10px 0 0 10px;
 }
 
+@media (min-width:667px){
+    .logo{
+        height: 50px; 
+        width: 110px;
+    }}
+
 .header__burger{  
     width: 60px;
     height: 60px;
@@ -23,6 +29,7 @@ body{
     width: 36px;
     background-color:white;
     margin-bottom: 5px;
+    margin-top: 7px;
 }
 
     @media (min-width:667px){
