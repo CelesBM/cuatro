@@ -28,3 +28,7 @@ function formEvent(){
   });
   });
   };
+
+  const contactEl = document.querySelector(".contact");
+  viewContact(contactEl);
+  formPost();
