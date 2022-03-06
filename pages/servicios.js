@@ -2,7 +2,7 @@
   function addService(params = {}) {
 
     const template = document.querySelector("#services__template");
-    const services = document.querySelector(".services__content");
+    const services = document.querySelector(".services");
   
     template.content.querySelector(".service__title").textContent =
       params.title;
@@ -22,9 +22,7 @@
 
  function getServices() {
 
-  return fetch(
-      "https://cdn.contentful.com/spaces/t2y6laxvfxhu/environments/master/entries?access_token=8antS_Xvc_jULVQcI5ZhnjHG39eFLNVFDvsL-2AplkM&content_type=services"
-  )
+  return fetch("https://cdn.contentful.com/spaces/t2y6laxvfxhu/environments/master/entries?access_token=zyzWwSi6tvYPpdaDBaL0iAseAAgHR77HnJuahsdoPeg&content_type=services")
     .then((res) => {
       return res.json();})
 
@@ -54,13 +52,15 @@
 
   function main() {
 
-headerContent(document.querySelector(".header"));
+    const headerEl = document.querySelector(".header");
+    headerContent(headerEl);
 
-getServices().then(function (ser) {
-  for (const s of ser) {addService(s);}
+    const footerEl = document.querySelector(".footer");
+    footerContent(footerEl);
+
+    getServices().then(function (ser) {
+    for (const s of ser) {addService(s);} 
 });
-
-footerContent(document.querySelector(".footer"));
 }
 
 main();
