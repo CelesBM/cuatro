@@ -42,6 +42,10 @@ body{
   padding: 0 40px;
 }
 
+@media (min-width: 768px){
+  .service{
+    padding: 0 200px 0 20px;}}
+
 .service__title{
   font-size: 20px;
   font-weight: 600;
