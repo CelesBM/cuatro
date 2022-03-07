@@ -25,10 +25,10 @@ body{
     margin: 0;
 }
 
-    @media (min-width: 667px) {
-        .contact__section {
+    @media (min-width: 667px){
+        .contact__section{
              flex-direction: row;
-            padding: 50px 20%;}}
+             padding: 50px 20%;}}
 
 .span-name .span-email .span-message{
     font-size: 13px;

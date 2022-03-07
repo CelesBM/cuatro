@@ -13,25 +13,27 @@
     <link rel="stylesheet" href="./components/header.css">
     <link rel="stylesheet" href="./pages/servicios.css">
     <link rel="stylesheet" href="./components/footer.css">
+    <link rel="stylesheet" href="./pages/contacto.css">
 
     <script defer src="./components/header.js"></script>
     <script defer src="./components/footer.js"></script>
     <script defer src="./pages/servicios.js"></script>
+    <script defer src="./pages/contacto.js"></script>
+    <script defer src="./pages/index.js"></script>
 
 </head>
 <body>
     
-    <div></div>
-
     <section>
         <div class="header">
         </div>
     </section> 
     
-    <section class="services">
-        <div class="services__container">
-        <h2 class="services__title">Mis servicios</h2>
+   <div class="services__title-div">
+       <h2 class="services__title">Mis servicios</h2>
+    </div>
 
+    <section class="services">
         <template id="services__template">
 
         <div class="services__content">
@@ -42,10 +44,13 @@
                 <a href="" class="service__link"></a>
             </div>
         </div>
-        </div>
    
         </template>     
+    </section>
 
+    <section>
+        <div class="contact">
+        </div>
     </section>
 
     <section>

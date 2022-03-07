@@ -48,16 +48,10 @@
       return i.sys.id == id;
     });
   }
+
   
-
   function main() {
-
-    const headerEl = document.querySelector(".header");
-    headerContent(headerEl);
-
-    const footerEl = document.querySelector(".footer");
-    footerContent(footerEl);
-
+    
     getServices().then(function (ser) {
     for (const s of ser) {addService(s);} 
 });

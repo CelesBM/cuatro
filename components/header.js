@@ -12,11 +12,11 @@ function headerContent(header){
       <div class="line"></div>
       <div class="line"></div>   
     </div>
-    </div>
     <div class="header__menu-link">
-        <a href="./portfolio.html" class="link">Portfolio</a>
-        <a href="./servicios.html" class="link">Servicios</a>
-        <a href="./contacto.html" class="link">Contacto</a>
+    <a href="./portfolio.html" class="link">Portfolio</a>
+    <a href="./servicios.html" class="link">Servicios</a>
+    <a href="./contacto.html" class="link">Contacto</a>
+    </div>
     </div>
     <section class="header__window">
         <div class="header__window-close">X</div>

@@ -13,11 +13,10 @@ body{
     margin: 10px 0 0 10px;
 }
 
-@media (min-width:667px){
-    .logo{
-        height: 50px; 
-        width: 110px;
-    }}
+    @media (min-width:667px){
+        .logo{
+            height: 50px; 
+            width: 110px;}}
 
 .header__burger{  
     width: 60px;
@@ -39,14 +38,7 @@ body{
 .header__menu-link{
     align-content: center;
     background-color: #161616;
-    position: absolute;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0px;
     display: none;
-    flex-direction: column;
 }
 
     @media (min-width: 667px){
@@ -68,7 +60,6 @@ body{
             text-decoration: white;
             padding: 15px;}}
 
-
 .header__window{
     background-color: #141414;
     position: absolute;
@@ -87,7 +78,7 @@ body{
     margin-right: 30px;
 }
 
-    @media (min-width: 667px) {
+    @media (min-width: 667px){
         .header__window-close{display: none;}}
 
 .header__window-list{

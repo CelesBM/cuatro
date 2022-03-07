@@ -3,21 +3,18 @@ body{
     font-family: "Montserrat", sans-serif;
 }
 
-.portfolio__container {
+.portfolio{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: white;
+  margin-bottom: 70px;
 }
 
-@media (min-width: 667px) {
-  .portfolio__container {
-    flex-direction: row;
-    width: 100%;
-    height: 100%;
-  }
-}
+  @media (min-width: 667px){
+  .portfolio{
+    flex-direction: row;}}
 
 .portfolio__title{
   font-size: 32px;
@@ -25,6 +22,10 @@ body{
   text-align: center;
   margin: 70px;
   margin-top: 30px;
+}
+
+.portfolio__container{
+  margin-bottom: 30px;
 }
 
 .portfolio__content-image{
@@ -51,11 +52,13 @@ body{
   font-weight: 200;
   text-align: center;
   margin: 0;
+  margin-bottom: 10px;
 }
 
 .portfolio__content-link{
   font-size: 16px;
   font-weight: 200;
   text-align: center;
-  margin-bottom: 40px;
+  position: relative;
+  left: 35%;
 }
