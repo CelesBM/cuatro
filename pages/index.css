@@ -15,7 +15,7 @@ margin: 0;
     height: 65px;
 }
 
-    @media (min-width: 667px){
+    @media (min-width: 768px){
         .header {height: 80px;}}
 
 .header-container{
@@ -52,7 +52,7 @@ margin: 0 auto;
 line-height: 200px;
 }
 
-    @media (min-width: 667px){
+    @media (min-width: 768px){
         .about-me__container{
             padding: 70px;}}
 

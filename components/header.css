@@ -13,7 +13,7 @@ body{
     margin: 10px 0 0 10px;
 }
 
-    @media (min-width:667px){
+    @media (min-width: 768px){
         .logo{
             height: 50px; 
             width: 110px;}}
@@ -32,7 +32,7 @@ body{
     margin-top: 7px;
 }
 
-    @media (min-width:667px){
+    @media (min-width: 768px){
         .line{display: none;}}
 
 .header__menu-link{
@@ -41,7 +41,7 @@ body{
     display: none;
 }
 
-    @media (min-width: 667px){
+    @media (min-width: 768px){
         .header__menu-link{
             background-color: inherit;
             display: inline;
@@ -55,7 +55,7 @@ body{
     text-decoration: none;
 }
 
-    @media (min-width: 667px){
+    @media (min-width: 768px){
         .link{
             text-decoration: white;
             padding: 15px;}}
@@ -78,7 +78,7 @@ body{
     margin-right: 30px;
 }
 
-    @media (min-width: 667px){
+    @media (min-width: 768px){
         .header__window-close{display: none;}}
 
 .header__window-list{

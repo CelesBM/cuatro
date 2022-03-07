@@ -3,7 +3,7 @@
     height: 498px;
 }
 
-    @media (min-width: 667px){
+    @media (min-width: 768px){
         .section-footer{
             display: flex;
             justify-content: space-between;}}
@@ -15,7 +15,7 @@
     padding: 53px 0px 95px 32px;
 }
 
-    @media (min-width: 667px){
+    @media (min-width: 768px){
         .section-footer__logo{
             padding: 140px 0px 0px 70px;}}
 
@@ -33,7 +33,7 @@
     margin-top: 30px;
 }
 
-    @media (min-width: 667px){
+    @media (min-width: 768px){
         .container-social-media{
              padding: 150px 70px;}}
 

@@ -12,7 +12,7 @@ body{
   margin-bottom: 70px;
 }
 
-  @media (min-width: 667px){
+  @media (min-width: 768px){
   .portfolio{
     flex-direction: row;}}
 

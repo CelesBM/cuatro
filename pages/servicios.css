@@ -12,7 +12,7 @@ body{
     align-items: center;
   }
 
-    @media (min-width: 667px){
+    @media (min-width: 768px){
       .services{
         flex-direction: row;}}
 
